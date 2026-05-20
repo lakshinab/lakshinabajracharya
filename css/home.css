@@ -1,0 +1,448 @@
+/*.herosection-backup{
+	background-image: url('../images/herosection.jpg');
+	width: 100%;
+	height: 82vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	margin-bottom: 115px;
+}
+
+.herosection-backup2{
+	background-image: url('../images/herosection.jpg');
+	background-position: right top;
+	background-size: 40%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 90vh;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 115px;
+	border-radius: 10px;
+}*/
+
+.hero-section{
+	width: 100%;
+	margin-bottom: 140px;
+	border-radius: 10px;
+}
+
+.hero-img{
+	width: 42.22%;
+	height: 95vh;
+	overflow: hidden;
+	border-radius: 10px;
+	object-fit: cover;
+	object-position: 92% 100%;
+}
+
+.hero-text{
+	position: absolute;
+  	bottom: 45%;
+  	left: 8%;
+  	color: #31493D;
+}
+
+.hero-button-div{
+	position: absolute;
+  	bottom: 10%;
+  	left: 8%;
+}
+
+.hero-button a{
+	padding: 15px 30px;
+	border-radius: 80px;
+	background: #588157;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+.hero-button{
+	margin-bottom: 24px;
+	width: 75%;
+}
+
+.hero-button p{
+	margin-right: 30px;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0.045em;
+}
+
+.hero-button-text{
+	margin-right: 30px; 
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0.045em;
+	background: #588157;
+	border: none;
+  	color: #FFFFFF;
+}
+
+.hero-button-outline a{
+	border: 2px solid #588157;
+	padding: 15px 30px;
+	border-radius: 80px;
+	font-size: 24px;
+	margin-bottom: 24px;
+	color: #31493D;
+}
+
+.hero-button-outline p{
+	margin-right: 30px; 
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0.045em;
+}
+
+.category{
+	margin-bottom: 140px; 
+}
+
+.category p{
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	color: #31493D;
+}
+
+.category img{
+	width: 94px;
+	padding-bottom: 15px;
+}
+
+.new-arrivals{
+	/*width: 84%;
+	margin: 0 8% 120px;*/
+	margin-bottom: 120px;
+}
+
+.bestsellers{
+	/*width: 84%;
+	margin: 0 8% 140px;*/
+	margin-bottom: 140px;
+}
+
+.magic-section{
+	padding: 120px 0px;
+	background-color: #A3B18A;
+	margin-bottom: 140px;
+}
+
+.magic-section img{
+	width: 50%;
+	height: 590px;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: center;
+}
+
+.magic-section-text{
+	width: 40%;
+}
+
+.magic-section-text h2{
+	color: #31493D;
+	width: 80%;
+	margin-bottom: 30px;
+}
+
+.magic-section-text .body-text{
+	
+	margin-bottom: 45px;
+}
+
+.why-ropaan{
+	width: 88%;
+	color: #31493D;
+}
+
+.box-div{
+	margin-bottom: 30px;
+}
+
+.why-ropaan-button{
+	width: 60%;
+	margin-top: 40px;
+}
+
+.img-container{
+	object-position: 100% 5%;
+}
+
+.deal-of-the-week{
+	margin-bottom: 140px;
+}
+
+.deal-of-the-week-text{
+	font-weight: 275;
+	font-size: 24px;
+	letter-spacing: 0.03em;
+	color: #31493D;
+}
+
+.deal-of-the-week .plant-rate{
+	margin: 25px 0 70px;
+}
+
+.deal-of-the-week .body-text{
+	width: 80%;
+	padding: 50px 0px;
+}
+
+.deal-of-the-week .common-button-outline{
+	width: 58%;
+}
+
+.deal-of-the-week-cart{
+	width: 85.5%;
+	padding: 65px 0 15px;
+}
+
+.deal-of-the-week .common-button{
+	width: 85.5%;
+}
+
+.deal-of-the-week .img{
+	width: 590px;
+	height: 590px;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: center;
+}
+
+.rewards-club{
+	margin-bottom: 140px;
+}
+
+.rewards-club .body-text{
+	width: 80%;
+	padding: 50px 0px;
+}
+
+.rewards-club .common-button-outline{
+	width: 85.5%;
+}
+
+.rewards-club .common-button{
+	width: 85.5%;
+	padding-top: 15px;
+}
+
+.rewards-club img{
+	width: 590px;
+	height: 590px;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+	.hero-section{
+		width: 100%;
+		margin: 12px 0 65px;
+		border-radius: 10px;
+	}
+
+	.hero-img{
+		width: 100%;
+		height: 65vh;
+		overflow: hidden;
+		border-radius: 10px;
+		object-fit: cover;
+		object-position: 92% 100%;
+	}
+
+	.hero-text{
+		position: absolute;
+	  	bottom: 35%;
+	  	left: 8%;
+	  	color: #FFFFFF;
+	}
+
+	.hero-button-div{
+		position: absolute;
+	  	bottom: 20%;
+	  	left: 8%;
+	}
+
+	.hero-button a{
+		padding: 10px 30px;
+		border-radius: 80px;
+		background: #588157;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 18px;
+		letter-spacing: 0.045em;
+		color: #FFFFFF;
+	}
+
+	.hero-button{
+		margin-bottom: 10px;
+		width: 200px;
+	}
+
+	.hero-button p{
+		margin-right: 30px;
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: 0.045em;
+	}
+
+	.hero-button-text{
+		margin-right: 30px; 
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: 0.045em;
+		background: #588157;
+		border: none;
+	  	color: #FFFFFF;
+	}
+
+	.hero-button-outline a{
+		border: 2px solid #588157;
+		padding: 10px 30px;
+		border-radius: 80px;
+		font-size: 15px;
+		margin-bottom: 10px;
+		color: #FFFFFF;
+	}
+
+	.hero-button-outline p{
+		margin-right: 30px; 
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: 0.045em;
+	}
+
+	.category{
+		margin-bottom: 65px; 
+	}
+
+	.category p{
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.05em;
+		color: #31493D;
+	}
+
+	.category img{
+		width: 83px;
+		padding-bottom: 15px;
+	}
+
+	.new-arrivals{
+		margin-bottom: 65px;
+	}
+
+	.bestsellers{
+		margin-bottom: 65px;
+	}
+
+	.magic-section{
+		padding: 50px 0px;
+		background-color: #A3B18A;
+		margin-bottom: 65px;
+	}
+
+	.magic-section img{
+		width: 100%;
+		height: 270px;
+		overflow: hidden;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	.magic-section-text{
+		width: 100%;
+	}
+
+	.magic-section-text h2{
+		color: #31493D;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	.magic-section-text .body-text{
+		
+		margin-bottom: 30px;
+	}
+
+	.why-ropaan{
+		width: 100%;
+		color: #31493D;
+	}
+
+	.box-div{
+		margin-bottom: 15px;
+	}
+
+	.why-ropaan-button{
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.deal-of-the-week{
+		margin-bottom: 65px;
+	}
+
+	.deal-of-the-week-text{
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 30px;
+		letter-spacing: 0.03em;
+		color: #31493D;
+	}
+
+	.deal-of-the-week .plant-rate{
+		margin: 25px 0 30px;
+	}
+
+	.deal-of-the-week .body-text{
+		
+		width: 100%;
+	}
+
+	.deal-of-the-week .common-button-outline{
+		width: 70%;
+	}
+
+	.deal-of-the-week-cart{
+		width: 100%;
+		padding: 30px 0 0px;
+	}
+
+	.deal-of-the-week .common-button{
+		margin-top: 15px;
+		width: 100%;
+	}
+
+	.rewards-club{
+		margin-bottom: 65px;
+	}
+
+	.rewards-club .body-text{
+		width: 100%;
+		padding: 15px 0px;
+	}
+
+	.rewards-club .common-button-outline{
+		width: 100%;
+	}
+
+	.rewards-club .common-button{
+		width: 100%;
+		padding-top: 15px;
+	}
+
+	.rewards-club img{
+		width: 390px;
+		height: 390px;
+		overflow: hidden;
+		object-fit: cover;
+		object-position: 0% 21%;
+	}
+}

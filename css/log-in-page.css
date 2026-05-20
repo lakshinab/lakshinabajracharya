@@ -1,0 +1,46 @@
+.log-in-section h3{
+	margin: 24px 0 30px;
+}
+
+.log-in-section .media-btn .common-button{
+	margin-right: 50px;
+	margin-bottom: 60px;
+}
+
+.log-in-section .media-btn .common-button p{
+	margin-right: 0px;
+}
+
+.return-home{
+	margin-bottom: 30px;
+}
+
+.signin-button{
+	width: 28.5%;
+	margin-bottom: 30px;
+}
+
+.log-in-section .second-heading{
+	margin: 60px 0 30px;
+}
+
+.continue-button{
+	width: 31%;
+	margin-bottom: 140px;
+}
+
+@media screen and (max-width: 1200px) {
+	.signin-button{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.continue-button{
+		width: 100%;
+		margin-bottom: 140px;
+	}
+
+	.main-happy-customers .repeat{
+		font-size: 40px;
+	}
+}

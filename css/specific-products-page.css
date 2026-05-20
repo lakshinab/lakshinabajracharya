@@ -1,0 +1,220 @@
+.main-product-img{
+	width: 100%;
+	height: 73vh;
+	overflow: hidden;
+	object-fit: cover;
+	margin-bottom: 24px;
+}
+
+.sub-product-img{
+	width: 103px;
+	height: 112px;
+	overflow: hidden;
+	object-fit: cover;
+	margin-right: 24px;
+}
+
+.plant-rate{
+	margin: 25px 0 50px;
+}
+
+.deal-of-the-week-cart{
+	margin-bottom: 15px;
+}
+
+.deal-of-the-week-cart .common-button-outline{
+	width: 58%;
+}
+
+.main-btn{
+	margin-bottom: 50px;
+}
+
+.gift-checkbox{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.05em;
+	color: #31493D;
+}
+
+.gift-checkbox input{
+	cursor: pointer;
+	height: 24px;
+  	width: 24px;
+  	accent-color: #588157;
+  	color: #588157;
+  	margin-right: 20px;
+}
+
+.facts{
+	margin: 50px 0px;  
+}
+
+.top-faq{
+	border: 2px solid #588157;
+	border-radius: 25px 25px 0px 0px;
+	padding: 13px 30px;
+}
+
+.top-faq .icons{
+	color: #31493D;
+	font-size: 20px;
+	padding-right: 20px;
+}
+
+.facts .fa-chevron-down{
+	font-size: 18px;
+	/*rotate: 0deg;*/
+}
+
+.facts p{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.05em;
+	color: #31493D;
+}
+
+.mid-faq{
+	border-left: 2px solid #588157;
+	border-right: 2px solid #588157;
+	border-bottom: 2px solid #588157;
+	padding: 13px 30px;
+}
+
+.mid-faq .icons{
+	color: #31493D;
+	font-size: 20px;
+	padding-right: 20px;
+}
+
+.bottom-faq{
+	border-left: 2px solid #588157;
+	border-right: 2px solid #588157;
+	border-bottom: 2px solid #588157;
+	border-radius: 0 0 25px 25px;
+	padding: 13px 30px;
+}
+
+.bottom-faq .icons{
+	color: #31493D;
+	font-size: 20px;
+	padding-right: 20px;
+}
+
+.showing-more-info{
+	display: none;
+}
+
+.showing-more-info p{
+	font-size: 14px;
+	padding-top: 15px;
+	color: #588157;
+}
+
+.features{
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 140.3%;
+	letter-spacing: 0.065em;
+	color: #31493D;
+}
+
+.features p{
+	padding-top: 5px;
+}
+
+.fa-truck{
+	font-size: 40px;
+}
+
+.fa-repeat{
+	font-size: 42px;
+}
+
+.fa-award{
+	font-size: 42px;
+}
+
+.about-product{
+	padding: 140px 0;
+}
+
+.about-product h3{
+	padding-bottom: 30px;
+}
+
+.plant-subscription .text ul{
+	padding-left: 20px;
+}
+
+.also-bought{
+	margin-bottom: 140px;
+}
+
+.rec-viewed .each-card{
+	margin-right: 40px;
+}
+
+.rec-viewed{
+	margin-bottom: 140px;
+}
+
+.faqs .facts{
+	margin: 10px 0px 140px; 
+}
+
+@media screen and (max-width: 1200px) {
+	.main-product-img{
+		width: 100%;
+		height: 390px;
+		overflow: hidden;
+		object-fit: cover;
+		margin-bottom: 24px;
+	}
+
+	.sub-product-img{
+		width: 60px;
+		height: 65px;
+		overflow: hidden;
+		object-fit: cover;
+		margin-right: 24px;
+	}
+
+	.plant-rate{
+		margin: 25px 0 30px;
+	}
+
+	.deal-of-the-week-cart{
+		margin-bottom: 15px;
+	}
+
+	.deal-of-the-week-cart .common-button-outline{
+		width: 58%;
+	}
+
+	.main-btn{
+		margin-bottom: 30px;
+	}
+
+	.about-product{
+		padding: 65px 0;
+	}
+
+	.also-bought{
+		margin-bottom: 65px;
+	}
+
+	.rec-viewed .each-card{
+		margin-right: 0px;
+	}
+
+	.rec-viewed{
+		margin-bottom: 65px;
+	}
+
+	.faqs .facts{
+		margin: 10px 0px 65px; 
+	}
+}

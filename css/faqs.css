@@ -1,0 +1,40 @@
+h3{
+	margin: 90px 0 0;
+}
+
+.faq{
+	border: 2px solid #588157;
+	border-radius: 15px;
+	padding: 10px 30px;
+	margin-top: 30px;
+}
+
+.faq .fa-chevron-down{
+	font-size: 18px;
+	/*rotate: 0deg;*/
+}
+
+.faq p{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	letter-spacing: 0.045em;
+	color: #31493D;
+}
+
+.showing-faq-answer{
+	display: none;
+}
+
+.showing-faq-answer p{
+	font-size: 15px;
+	padding-top: 15px;
+	color: #588157;
+}
+
+@media screen and (max-width: 1200px){
+	h3{
+		margin: 0px 0 0;
+	}
+}
+	

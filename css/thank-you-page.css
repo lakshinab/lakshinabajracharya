@@ -1,0 +1,81 @@
+.thank-you-text{
+	margin-top: 78px;
+	margin-bottom: 120px;
+}
+
+/*.thank-you-text h7{
+	font-weight: 800;
+	font-size: 55px;
+	line-height: 82px;
+	letter-spacing: 0.085em;
+	color: #31493D;
+}*/
+
+.thank-you-text p{
+	padding-top: 10px;
+	color: #31493D;
+}
+
+.thank-you-text p .order-num{
+	font-weight: 700;
+}
+
+.thank-you-text .fa-circle-check{
+	font-size: 124px;
+	color: #31493D;
+}
+
+.after-buying-details{
+	margin-bottom: 100px;
+	color: #31493D;
+}
+
+.after-buying-details div{
+	padding-bottom: 20px;
+}
+
+.after-buying-details .icons{
+	font-size: 28px;
+	padding-right: 15px;
+}
+
+.after-buying-details .fa-truck{
+	font-size: 24px;
+	padding-right: 15px;
+}
+
+.after-buying-details p{
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 140.3%;
+	letter-spacing: 0.065em;
+	color: #31493D;
+}
+
+.common-button{
+	width: 326px;
+	margin-bottom: 140px;
+}
+
+.imp-details{
+	font-weight: 500;
+}
+
+.return-home{
+	margin-top: 250px;
+	margin-bottom: 140px;
+}
+
+@media screen and (max-width: 1200px) {
+	.after-buying-details p{
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 140.3%;
+		letter-spacing: 0.065em;
+		color: #31493D;
+	}
+
+	.imp-details{
+		font-weight: 500;
+	}
+}

@@ -1,0 +1,124 @@
+img{
+	height: 590px;
+	object-fit: cover;
+}
+
+.text{
+	width: 85.5%;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 22px;
+	color: #585858;
+}
+
+.contact-us-form .text{
+	width: 76%;
+}
+
+.store-section{
+	padding: 90px 0 140px;
+}
+
+.space-10{
+	margin-bottom: 10px;
+}
+
+.space-20{
+	margin-bottom: 20px;
+}
+
+.space-30{
+	margin-bottom: 30px;
+}
+
+.heading{
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 140.8%;
+	letter-spacing: 0.07em;
+	color: #31493D;
+}
+
+.map-img{
+	background-image: url(../images/map.png);
+    background-position: center;
+    background-size: 110%;
+    height: 263px;
+}
+
+.contact-us-form .body-text{
+	color: #588157;
+	margin: 10px 0 50px;
+}
+
+.contact-us-form textarea{
+	height: 183px;
+}
+
+.contact-us-form .common-button{
+	margin: 50px 0 30px;
+	width: 272px;	
+}
+
+.contact-us-form .protected-info{
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 22px;
+	color: #31493D;
+}
+
+.contact-us-form .protected-info .protected-info-underline{
+	text-decoration-line: underline;
+}
+
+.store-photos{
+	margin-top: 140px;
+}
+
+.store-photos p{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.05em;
+	color: #31493D;
+	margin-bottom: 30px;
+}
+
+.store-photos img{
+	height: 387px;
+	width: 387px;
+}
+
+@media screen and (max-width: 1200px) {
+	img{
+		height: 340px;
+		object-fit: cover;
+		margin-bottom: 10px;
+	}
+
+	.contact-us-form .text{
+		width: 100%;
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 22px;
+		color: #585858;
+		margin-top: 65px;
+	}
+
+	.store-photos{
+		margin-top: 65px;
+	}
+
+	.store-photos img{
+		height: 340px;
+		width: 340px;
+	}
+
+	.text{
+		width: 100%;
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 22px;
+		color: #585858;
+	}
+}

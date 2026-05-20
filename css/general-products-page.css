@@ -1,0 +1,93 @@
+.sub-page-intro{
+	margin-bottom: 140px; 
+}
+.sub-page-intro .body-text{
+	width: 97%;
+}
+
+/*idk if it gies in home page*/
+.filter-text{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.05em;
+	color: #31493D;
+	padding-right: 14px; 
+}
+
+.filter-icon{
+	font-size: 18px;
+	color: #31493D;
+}
+
+.filter{
+	margin-bottom: 120px;
+}
+
+.each-card{
+	margin-bottom: 120px;
+}
+
+.pg-change-btn a{
+	border: 2px solid #588157;
+	background: none;
+	padding: 15px 30px;
+	border-radius: 80px;
+
+	font-weight: 400;
+	font-size: 18px;
+	/*line-height: 21px;*/
+	letter-spacing: 0.03em;
+	color: #31493D;
+}
+
+.previous-btn{
+	width: 15%;
+}
+
+.previous-btn .arrow{
+	font-size: 24px;
+	padding-right: 10px;
+}
+
+.next-btn{
+	width: 11%;
+}
+
+.next-btn .arrow{
+	font-size: 24px;
+	padding-left: 10px;
+}
+
+.page-num-area{
+	padding-bottom: 140px;
+}
+.page-num p{
+	border: 2px solid #588157;
+	background: none;
+	padding: 5px 9px;
+	border-radius: 50%;
+
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	color: #31493D;
+}
+
+@media screen and (max-width: 1200px) {
+	.pg-change-btn{
+		display: none;
+	}
+
+	.filter{
+		display: none;
+	}
+
+	.each-card{
+		margin-bottom: 30px;
+	}
+
+	.sub-page-intro{
+		margin-bottom: 65px; 
+	}
+}
