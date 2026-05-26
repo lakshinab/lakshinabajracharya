@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="./images/Ropaan Logo/Ropaan Logo.ico">
+	
+	<title>Lakshina Bajracharya | Portfolio</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sofia&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/home.css">
+
+	<!-- External Package -->
+	<script src="https://kit.fontawesome.com/4e0e1ea110.js" crossorigin="anonymous"></script>
+</head>
+<body id="body-container flex-item-hcenter">
+	<div id="mySidenav" class="sidenav flex-item-col flex-item-space-btw">
+		<div class="flex-item-col">
+		  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  	<h3 class="poppins">Your Cart</h3>
+		  	<div class="cart-product-list" id="del-this-product">
+		  		<div class="flex-item-row flex-item-space-btw">
+		  			<img src="./images/money-plant-golden.jpg" alt="Money Plant Golden">
+		  			<div>
+		  				<div class="flex-item-row flex-item-space-btw">
+			  				<p class="cart-product-name poppins">Money Plant Golden</p>
+			  				<a href="" onclick="delProdInCart()">
+			  					<i class="fa-solid fa-trash-can"></i>
+			  				</a>
+			  			</div>
+						<div class="cart-stars">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star-half-stroke"></i>
+						</div>
+						<div class="flex-item-row flex-item-vcenter">
+							<div class="cart-num flex-item-row flex-item-vcenter">
+								<a href="" onclick="subProduct()"><i class="fa-solid fa-minus add-minus"></i></a>
+								<p class="work-sans" id="demo">1</p>
+								<a href="" onclick="addProduct()"><i class="fa-solid fa-plus add-minus"></i></a>
+							</div>
+							<p class="poppins current-price" id="total-price">
+								Rs.120
+							</p>
+						</div>
+		  			</div>
+		  		</div>
+		  	</div>
+
+	  		<p class="work-sans discount-notice" id="del-discount-message">Discount will be calculated at the checkout</p>
+
+	  		<div class="cart-empty poppins" id="cart-empty-message">
+	  			Your cart is currently empty
+	  		</div>
+	  	</div>
+	  	<div>
+		  	<p class="poppins replacement-notice" id="del-replacement-message">FREE REPLACEMENTS IF YOU RECEIVE DAMAGED PLANTS</p>
+		  	<div class="main-btn common-button work-sans" id="del-this-button">
+				<a href="./pages/address-details-page.html" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+					<p>CHECKOUT - <span class="actual-price" id="checkout-total-price">Rs. 120</span></p>
+				</a>
+			</div>
+		</div>
+	  	<!-- <a href="#">Services</a>
+	  	<a href="#">Clients</a>
+	  	<a href="#">Contact</a> -->
+	</div>
+	<div class="overlay col-12" id="overlay">
+		
+	</div>
+
+	<div id="myLeftnav" class="left-menu-nav flex-item-col flex-item-space-btw">
+		<a href="javascript:void(0)" class="closebtn" onclick="menuCloseNav()">&times;</a>
+		<ol class="poppins">
+			<li><a href="./pages/general-products-page.html">Animation</a></li>
+			<li><a href="">Graphic Design</a></li>
+			<li><a href="">Illustration</a></li>
+			<li><a href="">Motion Graphic</a></li>
+			<li><a href="">Art</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+		</ol>
+	</div>
+
+	<nav class="container flex-item-space-btw flex-item-vcenter flex-item-hcenter">
+		<!--
+		<a href="" class="ham-icon-area">
+			<i class="fa-solid fa-bars ham-icon" onclick="openLeftMenuNav()"></i>
+		</a>
+	-->
+
+		<div class="flex-item-row flex-item-vcenter flex-item-vcenter flex-s-item-col">
+			
+			<a href="home.html" class="flex-item-start">
+				<img src="./images/Ropaan Logo/Ropaan Logo.png" class="logo-image">
+			</a>
+			<a href="home.html" class="flex-item-start">
+				<h6 class="logo-text sofia">
+					Lakshina B
+				</h6>
+			</a>
+		</div>
+		
+		<!--<div class="topnav">--> <!-- class="topnav" id="myTopnav"> -->
+
+			<!-- <a href="" class="ham-icon" onclick="myFunction()">
+			    <i class="fa-solid fa-bars"></i>
+			</a> -->
+<!--
+			<ol class="flex-item-space-around poppins">
+				<li class="dropdown">
+					<a href="" class="dropdown-btn">Animation</a>
+					<div class="dropdown-content">
+						<a href="#">1</a>
+					    <a href="#">2</a>
+					    <a href="#">3</a>
+					    <a href="#">4</a>
+					    <a href="#">5</a>
+					    <a href="#">6</a>
+					    <a href="#">7</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="" class="dropdown-btn">Graphic Design</a>
+					<div class="dropdown-content">
+					    <a href="#">Flower Seeds</a>
+					    <a href="#">Vegetable Seeds</a>
+					    <a href="#">Micro-green Seeds</a>
+					    <a href="#">Herb Seeds</a>
+					    <a href="#">Flower Bulbs</a>
+					    <a href="#">Fruit Seeds</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="" class="dropdown-btn">Illustration</a>
+					<div class="dropdown-content">
+					    <a href="#">Plastic Pots</a>
+					    <a href="#">Ceramic Pots</a>
+					    <a href="#">Metal Planters</a>
+					    <a href="#">Hanging Planters</a>
+					    <a href="#">Plant Stands</a>
+					    <a href="#">Handmade Eco-Friendly Pots</a>
+					    <a href="#">Seedling Trays</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="" class="dropdown-btn">Motion Graphic</a>
+					<div class="dropdown-content">
+					    <a href="#">Potting Mix & Fertilizers</a>
+					    <a href="#">Garden Tools</a>
+					    <a href="#">Watering Cans & Sprayers</a>
+					    <a href="#">Garden Decor & Accessories</a>
+					    <a href="#">Pest Control</a>
+					    <a href="#">Video Consultation with Experts</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="" class="dropdown-btn">Art</a>
+					<div class="dropdown-content">
+					    <a href="#">Corporate/Bulk Gifting</a>
+					    <a href="#">Personalized Gifting</a>
+					    <a href="#">Holiday Gifting</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="" class="dropdown-btn">About</a>
+					<div class="dropdown-content">
+					    <a href="#">Gardening Basics</a>
+					    <a href="#">Garden Maintenance</a>
+					    <a href="#">Kitchen Gardening</a>
+					    <a href="#">Ornamental Gardening</a>
+					    <a href="#">Green Lifestyle</a>
+					</div>
+				</li>
+				<li>
+					<a href="">Contact</a>
+				</li>
+			</ol>
+		</div>-->
+
+		<!-- <div class="flex-item-end">
+			<a href="./pages/404-error-page.html" class="nav-icons"><i class="fa-solid fa-magnifying-glass"></i></a>
+			<div class="dropdown">
+				<a href="./pages/log-in-page.html" class="nav-icons-dropdown"><i class="fa-solid fa-user"></i></a>
+				<div class="dropdown-content poppins">
+				    <a href="./pages/log-in-page.html">Log In</a>
+				    <a href="./pages/log-in-page.html">Create an Account</a>
+				</div>
+			</div>			
+			<a href="" class="nav-icons nav-icons-cart"><i class="fa-solid fa-cart-shopping" class="nav-icons" onclick="openNav()"></i></a>
+		</div>-->
+	</nav>
+
+	<div class="container">
+		<form class="search-bar work-sans flex-s-item-space-btw">
+			<input type="text" name="" placeholder="Search">
+			<a href="./pages/404-error-page.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+		</form>
+	</div>
+
+	<section class="hero-section flex-item-space-btw">
+		<div class="flex-item-col">
+			<h1 class="poppins hero-text">
+				My Visual<br><span class="" style="color: #FFFFFF; background-color: #588157; padding: 8px 20px 8px 10px; border-radius: 10px;">Storytelling</span><br>Journey
+			</h1>
+			<div class="hero-button-div flex-item-colwrap">
+				<div class="hero-button work-sans">
+					<a href="#section1" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+						<p>MY WORKS</p>
+						<i class="fa-solid fa-palette"></i>
+					</a>
+					<!-- <a href="">
+						<button class="hero-button-text"><p>SHOP NOW</p></button>
+						<i class="fa-brands fa-shopify"></i>
+					</a> -->
+				</div>
+				
+				<div class="hero-button-outline work-sans">
+					<a href="#section2" class="flex-item-row flex-item-vcenter">
+						<p>A LITTLE ABOUT ME & MY JOURNEY</p>
+						<i class="fa-solid fa-arrow-right-long"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<img src="./images/hero-section.jpg" class="hero-img">
+	</section>
+
+	<!--This will be used later for clients 
+
+
+	<section class="container bestsellers poppins">
+		<div>
+			<h3>Bestsellers</h3>
+		</div>
+		<div class="cards-area flex-item-fitadd flex-item-space-btw">
+			<div class="each-card">
+				<div>
+					<img src="./images/devil's-ivy.webp" type="image/webp">
+					<h5>Devil’s Ivy Plant</h5>
+				</div>
+				<div class="plant-rate">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
+					</div>
+					<div class="flex-item-row flex-item-base">
+						<p class="previous-price">
+							Rs.1400
+						</p>
+						<p class="current-price">
+							Rs.1200
+						</p>
+					</div>
+				</div>
+				<div class="common-button work-sans">
+					<a href="./pages/specific-products-page.html" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+						<p>VIEW PRODUCT</p>
+						<i class="fa-solid fa-arrow-right-long"></i>
+					</a>
+				</div>
+			</div>
+			<div class="each-card">
+				<div>
+					<img src="./images/peace-lily.webp" type="image/webp">
+					<h5>Peace Lily Plant</h5>
+				</div>
+				<div class="plant-rate">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
+					</div>
+					<div class="flex-item-row flex-item-base">
+						<p class="previous-price">
+							Rs. 4000
+						</p>
+						<p class="current-price">
+							Rs.3400
+						</p>
+					</div>
+				</div>
+				<div class="common-button work-sans">
+					<a href="./pages/specific-products-page.html" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+						<p>VIEW PRODUCT</p>
+						<i class="fa-solid fa-arrow-right-long"></i>
+					</a>
+				</div>
+			</div>
+			<div class="each-card">
+				<div>
+					<img src="./images/baby-rubber.webp" type="image/webp">
+					<h5>Baby Rubber Plant</h5>
+				</div>
+				<div class="plant-rate">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
+					</div>
+					<div class="flex-item-row flex-item-base">
+						<p class="previous-price">
+							Rs.700
+						</p>
+						<p class="current-price">
+							Rs.500
+						</p>
+					</div>
+				</div>
+				<div class="common-button work-sans">
+					<a href="./pages/specific-products-page.html" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+						<p>VIEW PRODUCT</p>
+						<i class="fa-solid fa-arrow-right-long"></i>
+					</a>
+				</div>
+			</div>
+			<div class="each-card">
+				<div>
+					<img src="./images/sweet-succulent.webp" type="image/webp">
+					<h5>Sweet Succulent Garden</h5>
+				</div>
+				<div class="plant-rate">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
+					</div>
+					<div class="flex-item-row flex-item-base">
+						<p class="previous-price">
+							Rs.500
+						</p>
+						<p class="current-price">
+							Rs.450
+						</p>
+					</div>
+				</div>
+				<div class="common-button work-sans">
+					<a href="./pages/specific-products-page.html" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+						<p>VIEW PRODUCT</p>
+						<i class="fa-solid fa-arrow-right-long"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>-->
+
+	<section class="container plant-subscription flex-item-row flex-item-vcenter flex-s-item-col" id="section2"> 
+		<img src="./images/me.jpg" class="col-6 col-s-4 img-container">
+		<div class="poppins col-6 flex-item-end col-s-4">
+			<div class="text">
+				<h3>Hi, I'm Lakshina!</h3>
+				<p class="body-text work-sans">
+					I tell stories about women. Their CREATIVITY, RESILIENCE & VISIBILTY. <br><br>
+					I am a visual communicator, graphic designer and animator exploring culture and identity, and creating work that amplifies underrepresented women's voices through narrative-driven work.
+					
+					<!--I am a Graphic designer and Animator working across visual communication, motion, and personal art practice. <br>
+					My work is shaped by themes of home, culture, and everyday observation, often informed by my background growing up 
+					in Nepal and studying internationally. A recurring focus in my practice is the representation and celebration of women, 
+					exploring identity, visibility, and lived experiences through visual storytelling. <br> 
+					I am interested in creating thoughtful, human-centred visuals that balance concept, craft, and emotion.-->
+				</p>
+				<div class="common-button work-sans">
+					
+					<a href="#section2" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+						<p>lakshinabajracharya@gmail.com</p>
+						<div>
+							<i class="fa-solid fa-envelope"></i>
+						</div>					
+					</a>
+
+				</div>
+				<br>
+				<div class="common-button work-sans">
+					
+					<a target="_blank" href="https://www.instagram.com/talesbyl/" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+						<p>https://www.instagram.com/talesbyl/</p>
+						<div>
+							<i class="fa-brands fa-instagram"></i>
+						</div>					
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container category flex-item-col flex-item-space-btw flex-s-item-col">
+		<div class="poppins text">
+			<h3>Collaborators & Companies</h3>
+		</div> <br>
+		<div class="flex-item-row flex-item-space-btw flex-s-item-col">
+			<div class=" flex-item-row flex-item-space-btw col-6 col-s-4">
+				<div class="col-4">
+					<a href="" class="flex-item-col flex-item-vcenter">
+						<div>
+							<img src="./images/logo-anti-apartheid-legacy-liliesleaf-trust.png">
+						</div>
+						<div class="poppins">
+							<p class="text-center">Research &<br>Visual Collaboration</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-4">
+					<a href="" class="flex-item-col flex-item-vcenter">
+						<div>
+							<img src="./images/londonmet.jpg">
+						</div>
+						<div class="poppins">
+							<p class="text-center">Social Media<br>Ambassador</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-4">
+					<a href="" class="flex-item-col flex-item-vcenter">
+						<div>
+							<img src="./images/Logo_v2.png" type="image/webp">
+						</div>
+						<div class="poppins">
+							<p class="text-center">3D<br>Generalist</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class=" flex-item-row flex-item-space-btw col-6 col-s-4">
+				<div class="col-4">
+					<a href="" class="flex-item-col flex-item-vcenter">
+						<div>
+							<img src="./images/Hype_yeti_bluee-02.png">
+						</div>
+						<div class="poppins">
+							<p class="text-center">Graphic<br>Designer</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-4">
+					<a href="" class="flex-item-col flex-item-vcenter">
+						<div>
+							<img src="./images/the_world_letter.png">
+						</div>
+						<div class="poppins">
+							<p class="text-center">3D Animator &<br>Visual Storyteller</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-4">
+					<a href="" class="flex-item-col flex-item-vcenter">
+						<div>
+							<img src="./images/yeipu.png">
+						</div>
+						<div class="poppins">
+							<p class="text-center">Graphic<br>Designer</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="magic-section" id="section1">
+		<div class="container flex-item-row flex-item-space-btw flex-item-vcenter flex-s-item-col">
+			<div class="magic-section-text">
+				<div>
+					<h2 class="poppins">
+						Cocovan &<br>the World Letter
+					</h2>
+					<p class="body-text work-sans">
+						In collaboration with artist Cocovan, this 3D animated narrative draws from Cocovan's journey in creating the World Letter- a 2500ft. participatory artwork connecting 145 countries 
+						through handwritten messages of love from the world to the world. <br><br>
+						It was my Final Year Project for my undergrad during a period of global unrest. This short film is very personal to me and centers around hope, unity and women-lead creative resilience.
+					</p>
+				</div>
+
+				<!--
+				<div>
+					<h2 class="poppins">
+						Why Ropaan
+					</h2>
+					<div class="why-ropaan work-sans flex-item-col">
+						<div class="box-div flex-item-row flex-item-space-btw flex-item-vcenter">
+							<i class="fa-solid fa-box box"></i>
+							<p>Secure and environmentally safe Packaging</p>
+						</div>
+						<div class="box-div flex-item-row flex-item-space-btw flex-item-vcenter">
+							<i class="fa-solid fa-repeat repeat"></i>
+							<p>Guaranteed replacements if damaged</p>
+						</div>
+						<div class="flex-item-row flex-item-space-btw flex-item-vcenter">
+							<i class="fa-solid fa-award award"></i>
+							<p>Expert guidance</p>
+						</div>
+					</div>
+				</div>
+				-->
+				<div class="common-button work-sans">
+					<a target="_blank" href="https://youtu.be/VfhZBt9JwnA" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+						<p>CLICK HERE TO WATCH 3D ANIMATION</p>
+						<i class="fa-solid fa-arrow-pointer"></i>
+					</a>
+				</div>
+			</div>
+			
+			<img src="./images/cocovan_feature_img.png">
+		</div>
+	</section>
+
+	<!--
+	<section class="container deal-of-the-week flex-item-row flex-item-vcenter flex-item-space-btw flex-s-item-colrev">
+		<div class="poppins col-6 col-s-4">
+			<p class="deal-of-the-week-text">RECENT WORK</p>
+			<h2>Women & Anti-Apartheid Movement</h2>
+			
+			<div class="plant-rate">
+				<div class="stars">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star-half-stroke"></i>
+				</div>
+				<div class="flex-item-row flex-item-base">
+					<p class="previous-price">
+						Rs.500
+					</p>
+					<p class="current-price">
+						Rs.450
+					</p>
+				</div>
+			</div>
+				
+			<div class="body-text work-sans">
+				A selection of recent 3D animation and generalist work exploring storytelling, lighting, and form.
+			</div>
+			
+			<div class="deal-of-the-week-cart flex-item-row flex-item-space-btw flex-item-vcenter">
+				<div class="cart-num flex-item-row flex-item-vcenter">
+					<i class="fa-solid fa-minus add-minus"></i>
+					<p class="work-sans">1</p>
+					<i class="fa-solid fa-plus add-minus"></i>
+				</div>
+				<div class="common-button-outline work-sans">
+					<a href="" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+						<p>ADD TO CART</p>
+						<i class="fa-solid fa-cart-shopping"></i>
+					</a>
+				</div>
+			</div>
+			
+			<div class="common-button work-sans">
+				<a href="./pages/specific-products-page.html" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+					<p>BUY IT NOW</p>
+					<i class="fa-brands fa-shopify"></i>
+				</a>
+			</div>
+		</div>
+		<img src="./images/women_anti_apartheid.png" class="col-6 col-s-4">
+	</section>
+	-->
+	
+	<section class="container plant-subscription flex-item-row flex-item-vcenter flex-s-item-col">
+		<img src="././images/women_anti_2.png" class="col-6 col-s-4">
+		<div class="poppins col-6 flex-item-end col-s-4">
+			<div class="text">
+				<p class="deal-of-the-week-text">RECENT WORK</p>
+				<h2>Women & Anti-Apartheid Movement</h2>
+				<p class="body-text work-sans">
+					In collaboration with Anti-Apartheid Legacy: Center of Memory and Learning, a research-led visual project
+					examining the Anti-Apartheid resistance through a women-centred lens.<br> <br>MA project is a result of design, storytelling,
+					and historical reflection to create accessible, engaging narrative that spotlights women in our history.
+				</p>
+				<div class="flex-item-col">
+					<div class="common-button-outline work-sans">
+						<a target="_blank" href="https://antiapartheidlegacy.org.uk/learning-through-women-in-the-anti-apartheid-struggle/" class="flex-item-row flex-item-space-btw flex-item-vcenter">
+							<p>READ PUBLISHED BLOG HERE</p>
+							<i class="fa-brands fa-readme"></i>
+						</a>
+					</div>
+					<div class="common-button work-sans">
+						<a target="_blank" href="https://www.youtube.com/watch?v=U2TsqZA6AK0&t=1s" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+							<p>CLICK HERE TO WATCH THE ANIMATION</p>
+							<i class="fa-solid fa-arrow-pointer"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="container new-arrivals poppins">
+		<div>
+			<h3>More Works</h3>
+		</div>
+		<div class="cards-area flex-item-fitadd flex-item-space-btw">
+			<div class="each-card">
+				<div>
+					<img src="./images/room.png" type="image/webp">
+					<h5>3D Generalist Showreel</h5>
+				</div>
+				<br>
+				<!--
+				<div class="plant-rate">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
+					</div>
+					<div class="flex-item-row flex-item-base">
+						<p class="previous-price">
+							Rs.400
+						</p>
+						<p class="current-price">
+							Rs.340
+						</p>
+					</div>
+				</div>
+			-->
+				<div class="common-button work-sans">
+					<a target="_blank" href="https://youtu.be/VFjOybOL7GE" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+						<p>VIEW VIDEO</p>
+						<i class="fa-solid fa-arrow-right-long"></i>
+					</a>
+				</div>
+			</div>
+			<div class="each-card">
+				<div>
+					<img src="./images/woody.png" type="image/webp">
+					<h5>A Cookie Tale</h5>
+				</div>
+				<br>
+				<!--
+				<div class="plant-rate">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
+					</div>
+					<div class="flex-item-row flex-item-base">
+						<p class="previous-price">
+							Rs.4000
+						</p>
+						<p class="current-price">
+							Rs.3400
+						</p>
+					</div>
+				</div>
+			-->
+				<div class="common-button work-sans">
+					<a target="_blank" href="https://youtu.be/dwMjQUVEwhI" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+						<p>VIEW VIDEO</p>
+						<i class="fa-solid fa-arrow-right-long"></i>
+					</a>
+				</div>
+			</div>
+			<div class="each-card">
+				<div>
+					<img src="./images/motion.png" type="image/webp">
+					<h5>Graphic & Motion Showreel</h5>
+				</div>
+				<br>
+				<!--
+				<div class="plant-rate">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
+					</div>
+					<div class="flex-item-row flex-item-base">
+						<p class="previous-price">
+							Rs.3000
+						</p>
+						<p class="current-price">
+							Rs.2500
+						</p>
+					</div>
+				</div>
+				-->
+				<div class="common-button work-sans">
+					<a target="_blank" href="https://drive.google.com/file/d/1CgjKs7yPMrvf79FLxQ-Dcjd2DGjmMEIy/view?usp=sharing" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+						<p>VIEW VIDEO</p>
+						<i class="fa-solid fa-arrow-right-long"></i>
+					</a>
+				</div>
+			</div>
+			<div class="each-card">
+				<div>
+					<img src="./images/2d.png">
+					<h5>2D Animatics</h5>
+				</div>
+				<br>
+				<!--
+				<div class="plant-rate">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
+					</div>
+					<div class="flex-item-row flex-item-base">
+						<p class="previous-price">
+							Rs.300
+						</p>
+						<p class="current-price">
+							Rs.250
+						</p>
+					</div>
+				</div>
+				-->
+				<div class="common-button work-sans">
+					<a target="_blank" href="https://youtu.be/xUb7ErPBk64" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+						<p>VIEW VIDEO</p>
+						<i class="fa-solid fa-arrow-right-long"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+	<section class="container rewards-club flex-item-row flex-item-vcenter flex-item-space-btw flex-s-item-colrev">
+		<div class="poppins col-6 col-s-4"> 
+			<h3>Join our Rewards Club</h3>
+			<p class="body-text work-sans">
+				Win coins for every Ropaan purchase you make and redeem points for amazing offers and discounts! 
+			</p>
+			<div class="flex-item-col">
+				<div class="common-button-outline work-sans">
+					<a href="" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+						<p>LEARN MORE</p>
+						<i class="fa-solid fa-arrow-right-long"></i>
+					</a>
+				</div>
+				<div class="common-button work-sans">
+					<a href="" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+						<p>JOIN THE CLUB</p>
+						<i class="fa-solid fa-hand-holding-dollar"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<img src="./images/women_anti_apartheid.png" class="col-6 col-s-4">
+	</section>
+
+	<section class="container">
+		<h3 class="poppins">From Happy Plant Parents</h3>
+		<div class="testimonial col-12 flex-item-row flex-s-item-col">
+			<div class="col-6 flex-item-row col-s-4">
+				<img src="./images/testimonial-1.jpg">
+				<div class="text">
+					<h6 class="work-sans">Sabina Bajracharya</h6>
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
+					</div>
+					<p class="work-sans">The customer service is amazing. I have been buying plants and seeds from Ropaan for a year with plant subscription and it has never failed to amaze me.</p>
+				</div>
+			</div>
+			<div class="col-6 flex-item-row col-s-4">
+				<img src="./images/testimonial-2.jpg">
+				<div class="text">
+					<h6 class="work-sans">Suroj Thapa</h6>
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
+					</div>
+					<p class="work-sans">The plant I asked for arrived perfectly as shown in the image. They gave me the updates of my plants. It was really helpful. The customer service is also amazing and would recommend.</p>
+				</div>
+			</div>
+		</div>
+		<div class="common-button-outline work-sans col-6 col-s-4">
+			<a href="" class="flex-item-row flex-item-vcenter flex-item-space-btw">
+				<p>See more photos/videos of our Happy Plant Parents</p>
+				<i class="fa-solid fa-arrow-right-long"></i>
+			</a>
+		</div>
+	</section>
+	-->
+
+	<footer class="">
+		<div class="footer">
+			<div class="container flex-item-row flex-item-space-btw flex-s-item-col">
+				<div class="poppins">
+					<h4>GET IN TOUCH</h4>
+					<a target="_blank" href="https://www.instagram.com/talesbyl/"><p>Instagram: @talesbyl</p></a>			
+					<p>Email : lakshinabajracharya@gmail.com</p>
+				</div>
+				<!--
+				<div class="poppins">
+					<a href="./pages/general-products-page.html"><h4>SERVICES</h4></a>
+					<a href="./pages/general-products-page.html"><p>Plants</p></a>
+					<p>Seeds</p>
+					<p>Pots</p>
+					<p>Plant Care</p>
+					<p>Gifting</p>
+					<p>Learn</p>
+					<p>Offers</p>
+					<a href="./pages/404-error-page.html"><p>More Search</p></a>
+					<a href="./pages/log-in-page.html"><p>Log In</p></a>
+				</div>
+				<div class="poppins">			
+					<a href="./pages/about-us-page.html"><h4>ABOUT US</h4></a>
+					<a href="./pages/about-us-page.html"><p>Our Story</p></a>
+					<a href="./pages/contact-page.html"><p>Contact Us</p></a>
+					<a href="./pages/locate-stores.html"><p>Locate Stores in Kathmandu</p></a>
+					<p class="footer-item-space">Locate Stores in Pokhara</p>
+					<h4>GET IN TOUCH</h4>
+					<div class="flex-item-row">
+						<p>Call :</p>
+						<div>
+							<p class="phone-no">+977-9841******</p>
+							<p class="phone-no">+977-9841******</p>
+						</div>				
+					</div>
+					<p>Email : support@ropaan.com</p>
+				</div>
+				<div class="poppins">
+					<h4>CUSTOMER CARE</h4>
+					<p>Shipping Policy</p>
+					<p>Terms & Conditions</p>
+					<p>Privacy Policy</p>
+					<a href="./pages/faqs-page.html"><p>Help + FAQs</p></a>
+					<p>Terms of Services</p>
+					<p>Refund Policy</p>
+				</div>
+				<div class="poppins">
+					<h4>SIGN UP FOR OUR<br>NEWSLETTER</h4>
+					<p>Get information of exclusive<br>offers & discounts, deal of the<br>week and plant tips</p>
+					<form class="newsletter flex-item-row flex-item-vcenter flex-item-hcenter">
+						<input type="text" id="fname" name="fname" placeholder="Enter email address" class="newsletter-input work-sans"><br>
+						<a href="">
+							<i class="fa-solid fa-arrow-right-long newsletter-submit"></i>
+						</a>
+					</form>
+					<h4>FOLLOW US</h4>
+					<div class="social-media">
+						<i class="fa-brands fa-facebook-f"></i>
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-brands fa-instagram"></i>
+						<i class="fa-brands fa-linkedin-in"></i>
+						<i class="fa-brands fa-youtube"></i>
+					</div>
+				</div>
+				-->
+			</div>	
+		</div>
+
+		<div class="container flex-item-row flex-item-vcenter copyright">
+			<!--<i class="fa-regular fa-copyright copyright-icon"></i>-->
+			<p class="copyright-text poppins">
+				Designed by Lakshina Bajracharya.
+			</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
